@@ -1,6 +1,6 @@
 # FFmpeg standalone for Windows
 
-This repository contains a prebuilt 64-bit Windows FFmpeg distribution, including command-line tools, shared libraries, headers, import libraries, and HTML documentation.
+This repository contains a prebuilt, portable 64-bit Windows FFmpeg distribution, including command-line tools, shared libraries, headers, import libraries, and HTML documentation. No installer is required.
 
 ## Build information
 
@@ -27,7 +27,9 @@ The binaries identify their complete configuration and library versions with:
 
 ## Requirements
 
-Run the tools from `bin/` or add that directory to your `PATH`. Keep the DLL files beside the executables (or otherwise available on the Windows DLL search path).
+## Plug and play
+
+Download and extract the package, then run `bin\ffmpeg.exe`, `bin\ffprobe.exe`, or `bin\ffplay.exe`. You can copy the extracted folder wherever you need it; keep the DLL files in `bin/` beside the executables. To use FFmpeg from another application, point the application to `bin\ffmpeg.exe`, or add the `bin/` directory to your `PATH`.
 
 ## Licensing
 
